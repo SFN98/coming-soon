@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-pattern-desktop.svg");
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0, 74%, 74%);
+    
+}
+span{
+    color: black;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:185px; 
+    height: 100vh;
+    overflow-y: hidden;
+} 
+
+.block-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90vh;
+    width: 25vw;
+    margin: 0 90px 0 140px;
+ } 
+
+
+
+h1{
+    font-size: 3em;
+    margin:80px 0 20px 0;
+    font-weight: 300;
+    letter-spacing: 10px;
+    
+    
+}
+h2{
+    font-size: 0.9em;
+    margin: 30px 0 30px 0;
+}
+
+input{
+    height: 5vh;
+    border-radius: 20px;
+    padding-left: 15px;
+    border: 1px solid gray;
+    width: 22vw;
+}
+
+input.active{
+    border: 1px solid red;
+}
+
+input[type='submit']{
+    font-size: 1.6em;
+    border: none;
+    width: 4vw;
+    padding-left: 0;
+    position: absolute;
+    left: 30vw;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: white;
+    box-shadow: 1px 1px 4px 1px hsl(0, 80%, 86%);
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-image: linear-gradient(to right, white, pink );
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+form p{
+    color: red;
+    font-size: 0.6em;
+    margin: 7px 0 0 30px;
+    display: none;
+}
+form p.show{
+    display: flex;
+}
+
+form img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 390px;
+    bottom: 188px;
+    display: none;
+}
+.image-mobil{
+    display: none;
+}
+
+
+form img.display{
+    display: flex;
+}
+
+@media screen and (max-width:376px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px; 
+    } 
+    .logo{
+        position: absolute;
+        top:15px;
+        left: 40px;
+    }
+    .image{
+        display: none;
+
+    }
+
+    .block-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+        width: 90vw;
+        margin: 0;
+     } 
+     h2{
+        font-size: 0.9em;
+        margin: 0 0 20px 0;
+        text-align: center;  
+    }
+    h1{
+        text-align: center;
+        margin:20px 0 20px 0;
+    }
+    body{
+        overflow: hidden;
+    }
+
+    input[type='submit']{
+        width: 10vw;
+        position: absolute;
+        left: 80vw;
+    }
+
+    input{
+        width: 80vw;
+    }
+    .image-mobil{
+        width: 100vw;
+        display: flex;
+    }
+
+}
+
+
+@media screen and (min-width:377px) and (max-width:560px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px; 
+    } 
+
+    .image-mobil{
+        width: 100vw;
+        display: flex;
+    }
+    .logo{
+        position: absolute;
+        top:40px;
+        left: 40px;
+    }
+    .image{
+        display: none;
+
+    }
+
+    .block-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+        width: 90vw;
+        margin: 0;
+     } 
+     h2{
+        font-size: 0.9em;
+        margin: 0 0 20px 0;
+        text-align: center;  
+    }
+    h1{
+        text-align: center;
+        margin:20px 0 20px 0;
+    }
+    body{
+        overflow: hidden;
+    }
+
+    input[type='submit']{
+        width: 10vw;
+        position: absolute;
+        left: 80vw;
+    }
+
+    input{
+        width: 80vw;
+    }
+
+}
+
+
+@media screen and (min-width:561px) and (max-width:853px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px; 
+    } 
+
+    .image-mobil{
+        width: 100vw;
+        display: flex;
+    }
+    .logo{
+        position: absolute;
+        top:40px;
+        left: 40px;
+    }
+    .image{
+        display: none;
+
+    }
+
+    .block-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+        width: 90vw;
+        margin: 0;
+     } 
+     h2{
+        font-size: 0.9em;
+        margin: 0 0 20px 0;
+        text-align: center;  
+    }
+    h1{
+        text-align: center;
+        margin:20px 0 20px 0;
+    }
+    body{
+        overflow: hidden;
+    }
+
+    input[type='submit']{
+        width: 10vw;
+        position: absolute;
+        left: 80vw;
+    }
+
+    input{
+        width: 80vw;
+    }
+
+}
+
+
+@media screen and (width:540px){
+    .image-mobil{
+        width: 100vw;
+        display: flex;
+        position: relative;
+        top:30px;
+    }
+    .logo{
+        position: absolute;
+        top:15px;
+        left: 40px;
+    }
+
+}
